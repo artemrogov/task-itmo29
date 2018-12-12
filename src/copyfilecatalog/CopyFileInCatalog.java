@@ -1,9 +1,8 @@
 package copyfilecatalog;
 
-import java.io.BufferedReader;
+
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /**
  * Задача 3
@@ -13,26 +12,19 @@ import java.io.InputStreamReader;
 
 public class CopyFileInCatalog {
 
-  /*  public static void main(String[] args) {
+   public static void main(String[] args) {
+
+       Scanner cat1 = new Scanner(System.in);
+       File targetDir = new File(cat1.nextLine());
+
+       Scanner cat2 = new Scanner(System.in);
+       File locationDir = new File(cat2.nextLine());
+
+       CopyPasteFiles.copyFilesCatalog(targetDir, locationDir);
 
 
-        if (args.length!=3){
-            System.out.println("Необходимо задать следующие параметры: CopyFileInCatalog <file_copied>, <file_name>, <catalog1>, <catalog2>");
 
-            return;
-        }
-
-        File fileOrigin  = new File(args[0]);
-        File fileCopied = new File(args[1]);
-
-        File catalogOrigin = new File(args[2]);
-        File catalogCopied = new File(args[3]);
+   }
 
 
-        try (BufferedReader readerFile = new BufferedReader()){
-
-        }catch (IOException o){
-            o.printStackTrace();
-        }
-    }*/
 }
